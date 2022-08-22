@@ -1,5 +1,6 @@
 import Player from '@vimeo/player';
-import throttle from 'lodash.throttle';
+import _ from 'lodash';
+import throttle from 'lodash.throttle/index';
 
 const iframe = document.querySelector('iframe');
 const player = new Player(iframe);
@@ -13,3 +14,6 @@ function onTimeupdate(params) {
   localStorage.setItem(STORAGE_KEY, params.seconds);
   console.log(params.seconds);
 }
+_.throttle(() => {
+  params.seconds;
+}, 1000);
