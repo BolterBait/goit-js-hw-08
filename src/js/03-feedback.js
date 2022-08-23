@@ -20,7 +20,6 @@ function onFormInput(evt) {
   };
 
   localStorage.setItem('STORAGE_KEY', JSON.stringify(data));
-  console.log(message.value);
 }
 
 function fillData() {
